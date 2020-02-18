@@ -69,6 +69,8 @@ node_modules/@framer/framer.device-skin-apple-iphone-xs-silver/index.ts
 node_modules/@framer/framer.device-skin-apple-iphone-xs-silver/device.png
 node_modules/@framer/framer.device-skin-apple-iphone-xs-silver/build/index.js.map
 node_modules/@framer/framer.device-skin-apple-iphone-xs-silver/build/index.js
+code/sounds/dialPound.wav
+code/sounds/dialAsterisk.wav
 code/sounds/dial9.wav
 code/sounds/dial8.wav
 code/sounds/dial7.wav
@@ -79,8 +81,6 @@ code/sounds/dial3.wav
 code/sounds/dial2.wav
 code/sounds/dial1.wav
 code/sounds/dial0.wav
-code/sounds/dial*.wav
-code/sounds/dial#.wav
 build/vendors.js
 build/framer.js
 index.html
