@@ -69,7 +69,6 @@ node_modules/@framer/framer.device-skin-apple-iphone-xs-silver/index.ts
 node_modules/@framer/framer.device-skin-apple-iphone-xs-silver/device.png
 node_modules/@framer/framer.device-skin-apple-iphone-xs-silver/build/index.js.map
 node_modules/@framer/framer.device-skin-apple-iphone-xs-silver/build/index.js
-design/images/ZFFtmbWaLxpliYy2AzRIEkGKsS8.png
 design/images/YgGLvjZOFJhlc9g7nIG50hzm9nY.png
 design/images/HbAw6ofIPrfgK1igd2lr3uoHFA.jpg
 code/sounds/dialPound.wav
