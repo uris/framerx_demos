@@ -57,6 +57,7 @@ node_modules/@framer/framer.device-skin-apple-ipad-air-silver/index.ts
 node_modules/@framer/framer.device-skin-apple-ipad-air-silver/device.png
 node_modules/@framer/framer.device-skin-apple-ipad-air-silver/build/index.js.map
 node_modules/@framer/framer.device-skin-apple-ipad-air-silver/build/index.js
+design/images/wYY2bjpmqYAs0VeaQKkINZz6eM.png
 build/vendors.js
 build/framer.js
 index.html
