@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HomePage</title>
+    <style>
+        
+        html, body, #main {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body, input, textarea, select, button {
+            font-family: "Inter", sans-serif;
+            font-size: 12px;
+        }
+        * {
+            box-sizing: inherit;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        body {
+            
+            background: rgba(255,255,255,1);
+        }
+        @font-face { src: url("https://fonts.gstatic.com/s/poppins/v15/pxiEyp8kv8JHgFVrFJDUc1NECPY.ttf"); font-family: "Poppins"; font-style: normal; font-weight: 400 }
+        body :not(input):not(textarea):not([contenteditable="true"]) { -webkit-user-select: none; user-select: none; }
+        [data-framer-component-type="Text"], [data-framer-component-type="Text"] * { pointer-events: none !important; -webkit-user-select: none; user-select: none; }
+        [data-framer-component-type="Text"] a { pointer-events: auto !important; }
+        [data-framer-component-type="Frame"] { -webkit-user-select: none; user-select: none; }
+    </style>
+    <link href="https://app.framerstatic.com/inter.KHCKEWGO.css" rel="stylesheet">
+    <link rel="preload" href="https://fonts.gstatic.com/s/poppins/v15/pxiEyp8kv8JHgFVrFJDUc1NECPY.ttf" as="font" crossorigin>
+</head>
+
+<body>
+    <script async src="https://ga.jspm.io/npm:es-module-shims@1.2.0/dist/es-module-shims.js"></script>
+    <script type="importmap">{"imports":{"framer":"https://app.framerstatic.com/framer.CGGQAP42.js","framer-motion":"https://app.framerstatic.com/framer-motion-esm-shim.AQ4FI7IQ.js","react":"https://ga.jspm.io/npm:react@17.0.2/index.js","react-dom":"https://ga.jspm.io/npm:react-dom@17.0.2/index.js","react-dom/server":"https://ga.jspm.io/npm:react-dom@17.0.2/server.browser.js","react/jsx-runtime":"https://ga.jspm.io/npm:react@17.0.2/jsx-runtime.js","framer:screens/e5v_FL0sd":"https://framerusercontent.com/modules/92vLm5hap9TKpZeu8Pbk/Ut5uZtxW2NQcpjSYsTuG/e5v_FL0sd.js"},"scopes":{"https://ga.jspm.io/":{"object-assign":"https://ga.jspm.io/npm:object-assign@4.1.1/index.js","scheduler":"https://ga.jspm.io/npm:scheduler@0.20.2/index.js"}}}</script>
+    
+
+    <div id="main"></div>
+
+    <script type="module">
+        import * as React from "react"
+        import * as ReactDOM from "react-dom"
+        import * as Framer from "framer"
+
+        window.Framer = Framer
+        window.__framer_importFromPackage = (name) => () =>
+            React.createElement("div", {}, "Package component not supported: " + name)
+
+        ;(async () => {
+            const routes = {"e5v_FL0sd": {"page": Framer.lazy(() => import("https://framerusercontent.com/modules/92vLm5hap9TKpZeu8Pbk/Ut5uZtxW2NQcpjSYsTuG/e5v_FL0sd.js"))}}
+            const entryRouteId = "e5v_FL0sd"
+            const pathname = window.location.pathname
+            const routeId = Object.keys(routes).find(routeId => routes[routeId].path === pathname) || entryRouteId
+            const route = routes[routeId]
+
+            try {
+                window.history.replaceState({ key: routeId }, route.title, route.path)
+            } catch {}
+
+            const RootComponent = await route.page.preload()
+            const main = document.getElementById("main")
+            const renderFunction = "framerHydrate" in main.dataset ? ReactDOM.hydrate : ReactDOM.render
+
+            renderFunction(
+                React.createElement(
+                    Framer.PageRoot,
+                    {
+                        RootComponent,
+                        isWebsite: false,
+                        routeId,
+                        routes,
+                    }
+                ),
+                main
+            )
+        })()
+    </script>
+</body>
+<html>
