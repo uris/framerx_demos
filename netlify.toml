@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "https://personal.showdonttell.app/*"
+  to = "https://showdonttell.app/personal/:splat"
+  status = 200
